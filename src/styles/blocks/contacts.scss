@@ -1,0 +1,73 @@
+.contacts {
+  &__info {
+
+  }
+
+  &__info-title {
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $c-white;
+    opacity: 0.5;
+  }
+
+  &__info-link {
+    display: block;
+    margin-bottom: 48px;
+    font-family: $ff-opensans;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: $c-white;
+    transition: color 0.8s;
+
+    &:hover {
+      color: #d2ebff;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__info-img {
+    height: 24px;
+    width: 24px;
+    margin-bottom: 85px;
+    background-repeat: no-repeat;
+    transition: background-image 0.8s ease;
+
+    @include onipad {
+      margin-bottom: 144px;
+    }
+
+    &--fb {
+      background-image: url(../images/svg/facebook.svg);
+
+      &:hover {
+        background-image: url(../images/svg/facebookhover.svg);
+      }
+    }
+
+    &--instagram {
+      background-image: url(../images/svg/instagram.svg);
+
+      &:hover {
+        background-image: url(../images/svg/instagramhover.svg);
+      }
+    }
+
+    &--twitter {
+      background-image: url(../images/svg/twitter.svg);
+
+      &:hover {
+        background-image: url(../images/svg/twitterhover.svg);
+      }
+    }
+  }
+
+}

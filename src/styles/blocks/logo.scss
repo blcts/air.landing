@@ -1,0 +1,7 @@
+.logo {
+transition: transform 0.8s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

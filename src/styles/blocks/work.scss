@@ -1,0 +1,58 @@
+.work {
+  background-color: $c-white;
+  padding:0 20px 72px;
+
+
+  @include onipad {
+    padding:0 40px 400px;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
+  &__title {
+    margin: 0 auto 24px;
+    padding-top: 72px;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+    color: $c-maintext;
+    max-width: 280px;
+
+    @include onipad {
+      padding-top: 200px;
+      max-width: 500px;
+    }
+
+    @include onDesktop {
+      padding-top: 200px;
+      max-width: 600px;
+    }
+  }
+
+  &__description {
+    margin: 0 auto 56px;
+    font-family: $ff-opensans;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    text-align: center;
+    color: $c-description;
+
+    @include onipad {
+      margin-bottom: 64px;
+      max-width: 558px;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+
+    @include onipad {
+      width: 264px;
+    }
+  }
+}

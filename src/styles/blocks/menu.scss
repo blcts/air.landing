@@ -1,0 +1,14 @@
+.menu {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $c-blue;
+  margin-bottom: 200px;
+
+
+  &__content {
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,51 @@
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+
+  @include onDesktop {
+    flex-direction: row;
+    padding: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    @include onipad {
+      flex-direction: row;
+      align-items: center;
+      gap: 64px;
+    }
+  }
+
+  &__item {
+    margin-bottom: 24px;
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $c-white;
+    transition: color 0.8s;
+
+    &:hover {
+      color: #d2ebff;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 50px;
+
+    @include onipad {
+      margin-bottom: 25px;
+    }
+  }
+}
