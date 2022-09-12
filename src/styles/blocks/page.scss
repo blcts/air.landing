@@ -2,9 +2,51 @@
   box-sizing: border-box;
   font-family: $ff-poppins;
   scroll-behavior: smooth;
-  background-color: $c-airBlue;
+  background-color: #f2f9ff;
+  overflow-x: hidden;
+  width: 100vw;
 
   &__body--with-menu {
     overflow: hidden;
   }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0;
+
+    &:target {
+      transform: translateX(0);
+    }
+
+    @include onDesktop {
+      transform: none;
+      position: relative;
+      height: 20px;
+    }
+
+    &--header {
+      display: flex;
+      padding-top: 21px;
+      padding: 21px 21px 0;
+      margin-bottom: 30px;
+      justify-content: space-between;
+
+      @include onipad {
+        margin-bottom: 36px;
+      }
+
+      @include onDesktop {
+        display: none;
+      }
+    }
+  }
+}
+
+.page__body--with-menu .icon--menu {
+  display: none;
 }

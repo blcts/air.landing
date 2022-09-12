@@ -1,5 +1,6 @@
 .icon {
   display: flex;
+  position: relative;
   justify-content: start;
   width: 18px;
   height: 18px;
@@ -17,18 +18,19 @@
     background-size: cover;
     background-image: url(../images/svg/menu_dia.svg);
 
+    @include onDesktop {
+      display: none;
+    }
   }
 
   &--close {
     display: block;
     min-width: 18px;
-
     background-position: center;
     background-repeat: no-repeat;
     color: $c-white;
     height: 18px;
     background-size: cover;
     background-image: url(../images/svg/menu_close.svg);
-
   }
 }
