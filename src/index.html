@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" class="page">
+<html lang="en" >
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air</title>
+
     <link rel="stylesheet" href="./styles/main.scss">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
     <link
-    rel="icon"
-    href="./images/logo/Air.png"
-  >
+      rel="icon"
+      href="./images/logo/Air.png"
+    >
     <script src="scripts/main.js" defer></script>
+
   </head>
-  <body>
+  <body class="page">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+
     <header class="header" >
       <div class="container" >
         <div class="header__content">
@@ -62,60 +69,56 @@
                 Learn more
               </a>
             </div>
-
-            <div class="header__carousel carousel">
-              <img
-                class="carousel__img"
-                src="./images/slider/main.jpeg" alt="first slide image"
-              >
-
-              <!-- <img
-                class="carousel__img"
-                src="./images/slider/arrow-left.svg" alt="arrow left"
-              >
-
-              <img
-                class="carousel__img"
-                src="./images/slider/arrow-right.svg" alt="arrow right"
-              >
-
-              <img
-                class="carousel__img"
-                src="./images/slider/slide-img-1.jpg" alt="first slide image"
-              > -->
-
-              <!-- <h3 class="carousel__title">
-                Intro
-              </h3>
-
-              <p class="carousel__description">
-                By the same illusion which lifts the horizon.
-              </p> -->
+          </div>
+          <div class="caroussel">
+            <img
+              class="caroussel__img"
+              src="./images/slider/main.jpeg"
+              alt="first slide image"
+            >
+            <div class="caroussel__title">
+              INtro
             </div>
 
+            <div class="caroussel__description">
+              By the same illusion which lifts the horizon.
+            </div>
           </div>
         </div>
       </div>
     </header>
 
-    <nav class="nav menu" id="menu" >
-      <a href="#" class="logo">
-        <img
-          class="logo_img"
-          src="./images/logo/Air.svg" alt="DIA logo"
-        >
-      </a>
+    <nav class="nav menu page__menu" id="menu" >
+      <div class="page__menu--header">
+        <a href="#" class="logo">
+          <img
+            class="logo_img"
+            src="./images/logo/Air.svg" alt="DIA logo"
+          >
+        </a>
 
-      <a
-        href="#"
-        class="header__menu
-          icon
-          icon--close"
-      >
-      </a>
+        <div class="header__container">
+          <a
+            href="#"
+            class="header__menu
+              icon
+              icon--close"
+            >
+          </a>
+        </div>
+
+        <div class="header__container-decor">
+          <a href="#contacts" class="header__link">
+            Hire&nbsp;us
+          </a>
+
+          <div class="header__decor">
+          </div>
+        </div>
+      </div>
 
       <div class="menu__content">
-        <ul class="nav__list">
+        <ul class="nav__list nav__list__top">
           <li class="nav__item">
             <a href="#weare" class="nav__link">
               About us
@@ -164,44 +167,44 @@
 
           <div class="expertise__card">
             <div class="cards-container">
-              <div class="card">
+              <div class="cardd">
                 <img
                   src="./images/what-we-do/what-we-do-1.png"
                   alt="what we do image"
-                  class="card__img"
+                  class="cardd__img"
                 >
-                <h1 class="card__title">
+                <h1 class="cardd__title">
                   Branding
                 </h1>
-                <p class="card__description">
+                <p class="cardd__description">
                   We create additional value for companies, products, services as well as verbal and visual ways to deliver it to the audience.
                 </p>
               </div>
 
-              <div class="card">
+              <div class="cardd">
                 <img
                   src="./images/what-we-do/what-we-do-2.png"
                   alt="what we do image"
-                  class="card__img"
+                  class="cardd__img"
                 >
-                <h1 class="card__title">
+                <h1 class="cardd__title">
                   Communication
                 </h1>
-                <p class="card__description">
+                <p class="cardd__description">
                   We strive to create communications that can increase media performance. We use everything — words, meanings, stories, art, movies.
                 </p>
               </div>
 
-              <div class="card">
+              <div class="cardd">
                 <img
                   src="./images/what-we-do/what-we-do-3.png"
                   alt="what we do image"
-                  class="card__img"
+                  class="cardd__img"
                 >
-                <h1 class="card__title">
+                <h1 class="cardd__title">
                   Strategy
                 </h1>
-                <p class="card__description">
+                <p class="cardd__description">
                   We create business growth strategies, from the moment of its birth to the achievement of the necessary business indicators.
                 </p>
               </div>
@@ -582,7 +585,7 @@
           >
         </a>
 
-        <ul class="nav__list">
+        <ul class="nav__list nav__list-bottom">
           <li class="nav__item">
             <a href="#weare" class="nav__link">
               About us

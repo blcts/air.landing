@@ -1,4 +1,4 @@
-.carousel {
+.caroussel {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -19,35 +19,49 @@
     display: block;
     border-radius: 25% 0;
     object-fit: cover;
+    border-radius: 0 130px 0 0;
+    transform: scale(-1, 1);
 
     @include onDesktop {
-      border-radius: 35% 0 0;
+      border-radius: 0 35% 0 0;
     }
   }
 
-  // &__title {
-  //   margin-bottom: 8px;
-  //   font-weight: 700;
-  //   font-size: 13px;
-  //   line-height: 19.5px;
-  //   letter-spacing: 3px;
-  //   text-transform: uppercase;
-  //   z-index: 3;
-  // }
+  &__title {
+    position: absolute;
+    top: 200px;
+    left: 10%;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19.5px;
+    color: $c-white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    z-index: 3;
 
-  // &__description {
-  //   font-family: $ff-opensans;
-  //   font-weight: 400;
-  //   font-size: 14px;
-  //   line-height: 19.5px;
-  //   z-index: 3;
-  // }
+    @include onDesktop {
+      top: 464px;
+      left: 122px;
+    }
+  }
 
-  // &__pointer {
-  //   height: 9px;
-  //   padding: 11.5px 13px;
-  //   border-radius: 50%;
-  //   fill: $c-maintext;
-  //   background-color: $c-white;
-  // }
+  &__description {
+    position: absolute;
+    top: 230px;
+    left: 10%;
+    width: 220px;
+    font-family: $ff-opensans;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.5px;
+    color: $c-white;
+    z-index: 3;
+
+    @include onDesktop {
+      top: 489px;
+      left: 122px;
+    }
+  }
 }
+

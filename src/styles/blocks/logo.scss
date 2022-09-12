@@ -1,7 +1,9 @@
 .logo {
 transition: transform 0.8s;
-
+z-index: 1;
+@include onDesktop {
   &:hover {
     transform: scale(1.05);
   }
+}
 }

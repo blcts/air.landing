@@ -1,5 +1,5 @@
 .services {
-  padding: 120px 20px 0;
+  padding: 0 20px 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -7,11 +7,13 @@
   margin: 0 auto 120px;
 
   @include onipad {
-    padding: 148px 40 0;
+    padding-top: 0;
     margin-bottom: 148px;
+    padding: 148px 40 0;
   }
 
   @include onDesktop {
+    padding-top: 120px;
     flex-direction: row;
   }
 

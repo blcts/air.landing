@@ -7,8 +7,21 @@
   background-color: $c-blue;
   margin-bottom: 200px;
 
+  @include onDesktop {
+    top: 52px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
 
   &__content {
+    max-width: 650px;
     margin: 0 auto;
+  }
+
+  &__logo {
+    @include onipad {
+      display: none;
+    }
   }
 }

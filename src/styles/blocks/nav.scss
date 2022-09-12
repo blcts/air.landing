@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
+  overflow: hidden;
 
   @include onDesktop {
     flex-direction: row;
@@ -13,9 +13,29 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
 
+    &__top {
+      @include onMobile {
+        position: absolute;
+        top: 96px;
+        left: 21px;
+        align-items: flex-start;
+      }
+    }
 
-    @include onipad {
+    &-bottom {
+      @include onipad {
+        flex-direction: row;
+        gap: 40px
+      }
+
+      @include onipad {
+        align-items: center;
+      }
+    }
+
+    @include onDesktop {
       flex-direction: row;
       align-items: center;
       gap: 64px;
